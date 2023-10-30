@@ -41,3 +41,6 @@ class Profesor extends Persona {
 
 const profe = new Profesor("Lara", 20, "Fem", "Programación", "3");
 console.log(profe.asignar());
+
+
+//EXTRAS
