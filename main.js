@@ -44,3 +44,29 @@ console.log(profe.asignar());
 
 
 //EXTRAS
+
+//KATA1
+class Warrior {
+    constructor(life, power) {
+        this.life = life;
+        this.power = power;
+    }
+    power() {
+        return `Power: ${this.power}`
+    }
+    defend(damage) {
+        this.life -= damage;
+        return `Vida Restante: ${this.life}`;
+    }
+}
+
+const warrior = new Warrior(100, 20);
+console.log(warrior.power);
+console.log(warrior.defend(10));
+
+class Maya extends Warrior {
+    constructor(life, power, drinkColacao) {
+        super(life, power);
+        this.drinkColacao = drinkColacao;
+    }
+}
